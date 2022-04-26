@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Kanit:wght@100&family=Lobster&family=Mukta:wght@200&family=Poppins:wght@100&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+         <h1 id="title">Survey Form</h1>
+         <p id="description">Thank you for taking the time to improve our platform</p>
+       </header>
+       
+        <main>     
+            <form id="survey-form">
+
+                <label id="name-label" for="name">Name<br>
+                    <input type="text" id="name" required placeholder="Enter Your Name">
+                </label>
+
+                <br>
+
+                <label id="email-label" for="email">Email<br>
+                    <input type="email" id="email" required placeholder="Enter Your Email">
+                </label>
+
+                <br>
+
+                <label id="number-label" for="age">Age<br>
+                    <input type="number" id="number" required placeholder="Age" min="18" max="35">
+                </label>
+
+                <br>
+
+                <label id="drop" for="dropdown">What are you currently busy with?<br>
+                    <select id="dropdown" required>
+                        <option value>Select An Option:</option>
+                        <option value="student">Student</option>
+                        <option value="employed-fulltime">Employed Full-Time</option>
+                        <option value="Unemployed">Unemployed</option>
+                    </select>
+                <br>
+
+                <fieldset id="radio-field" required>
+                    <legend>Would you recommend?</legend>
+                    <input type="radio" name="rad" value="definetly">Definitely<br>
+                    <input type="radio" name="rad" value="maybe">Maybe<br>
+                    <input type="radio" name="rad" value="nope">Nope
+                </fieldset>
+
+                <fieldset id="check-field">
+                    <legend>What would you like to see improved?</legend>
+                    <input type="checkbox" name="che" value="challenges">Challenges<br>
+                    <input type="checkbox" name="che" value="front-end">Front-end<br>
+                    <input type="checkbox" name="che" value="backend">Backend<br>
+                    <input type="checkbox" name="che" value="videos">Videos<br>
+                    <input type="checkbox" name="che" value="wiki">Wiki<br>
+                </fieldset>
+
+                <br>
+
+                <label id="comment-label" for="comment">Comment<br>
+                  <textarea id="comment" value="Enter Your Comment Here..."></textarea>
+                </label>              <br>
+                    <input type="submit" value="Submit" id="submit">
+            </form>
+         <main>
+
+            <div class="sub-box">
+                <input type="button" class="ok-btn" value="OK">
+            </div>
+
+     </body>
+         
+     <script src ="js/script.js"></script>
+</html>
+
+ 
+   
