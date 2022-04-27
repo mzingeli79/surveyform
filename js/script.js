@@ -38,7 +38,7 @@ submit.addEventListener('click', (e) => {
 });
 
 ok.addEventListener('click', () => {
-    display.remove(display);
+    display.style.display="none";
 });
 
 
